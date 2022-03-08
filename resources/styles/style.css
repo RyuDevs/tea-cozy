@@ -2,18 +2,26 @@
     margin: 0;
 }
 
+html{
+    background-color: black;
+}
+
 body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 22px;
-    color: seashell;
-    background-color: black;
     opacity: 0.9;
     text-align: center;
+}
+
+body, a {
+    color: seashell;
 }
 
 h2, h3, h4, h5, p {
     padding: 10px;
 }
+
+
 
 .navbar, .navbar ul, .banner, .flex-products {
     display: flex;
@@ -74,5 +82,10 @@ main section{
     background-size: cover;
     align-items: center;
     margin-bottom: 2em;
+}
+
+footer {
+    text-align: left;
+    padding-left: 20px;
 }
 
