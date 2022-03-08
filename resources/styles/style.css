@@ -28,7 +28,9 @@ header, .banner-text, .location-box {
 header {
     position: fixed;
     width: 100%;
-    z-index: 2;
+    min-height: 69px;
+    border-bottom: 1px solid seashell;
+    z-index: 1;
 }
 
 .navbar, .navbar ul, .banner, .flex-products, .location-wrapper, #locations, .location-box{
@@ -39,8 +41,6 @@ header {
 
 .navbar {
     box-sizing: border-box;
-    min-height: 69px;
-    border-bottom: 1px solid seashell;
     padding: 10px;
     align-items: center;
     justify-content: space-between;
@@ -72,15 +72,13 @@ main section{
 
 .banner {
     min-height: 700px;
-    width: 100%;
-    background-image: url('../images/img-mission-background.jpeg');
-    background-size: cover;
+    background: url('../images/img-mission-background.jpeg') center no-repeat;
     align-items: center;
     margin-bottom: 2em;
 }
 
 .banner-text {
-    width: 100%;
+    width: 1200px;
 }
 
 #featured {
@@ -98,28 +96,28 @@ main section{
 
 #locations {
     min-height: 500px;
-    width: 100%;
-    background-image: url('../images/img-locations-background.jpeg');
+    background: url('../images/img-locations-background.jpeg') center no-repeat;
     display: flex;
     justify-content: center;
     align-content: center;
+    flex-wrap: wrap;
 }
 
 .location-wrapper {
-    width: 100%;
+    width: 1200px;
 }
 
 #locations h2 {
     margin-bottom: 15px;
     padding: 0;
-    width: 100%;
+    width: 1200px;
 }
 
 .location-box {
     margin: 2em auto;
     opacity: 0.9;
     width: 300px;
-    height: 300px;
+  
     align-items: center;
 }
 
