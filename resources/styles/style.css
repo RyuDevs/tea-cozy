@@ -21,7 +21,12 @@ h2, h3, h4, h5, p {
     padding: 10px;
 }
 
-
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5)
+}
 
 .navbar, .navbar ul, .banner, .flex-products {
     display: flex;
@@ -51,6 +56,8 @@ h2, h3, h4, h5, p {
 }
 
 main {
+    position: relative;
+    top: 69px;
     width: 100%;
 }
 
