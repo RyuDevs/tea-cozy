@@ -21,16 +21,20 @@ h2, h3, h4, h5, p {
     padding: 10px;
 }
 
+header, .banner-text, .location-box {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
 header {
     position: fixed;
     width: 100%;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.5)
 }
 
-.navbar, .navbar ul, .banner, .flex-products {
+.navbar, .navbar ul, .banner, .flex-products, .location-wrapper, #locations, .location-box{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .navbar {
@@ -43,7 +47,7 @@ header {
 
 .navbar ul{
     list-style: none;
-    flex: 2 1 100%;
+    flex: 2 1 70%;
     justify-content: flex-end;
 }
 
@@ -62,24 +66,7 @@ main {
 }
 
 main section{
-    margin: 0 auto;
-}
-
-#featured {
-    width: 1000px;
-}
-
-.flex-products {
-    flex-wrap: wrap;
-}
-
-.product {
-    padding: 10px;
-}
-
-.product img {
-    width: 300px;
-    height: 200px;
+    margin: 0 auto 30px auto;
 }
 
 .banner {
@@ -91,6 +78,50 @@ main section{
     margin-bottom: 2em;
 }
 
+.banner-text {
+    width: 100%;
+}
+
+#featured {
+    width: 1000px;
+}
+
+.product {
+    padding: 10px;
+}
+
+.product img {
+    width: 300px;
+    height: 200px;
+}
+
+#locations {
+    height: 500px;
+    width: 1200px;
+    background-image: url('../images/img-locations-background.jpeg');
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#locations h2 {
+    margin-bottom: 15px;
+    padding: 0;
+    width: 100%;
+}
+
+.location-box {
+    margin-right: 40px;
+    opacity: 0.9;
+    width: 300px;
+    height: 300px;
+    align-items: center;
+}
+
+.location-box p{
+    width: 100%;
+}
+
 #contact {
     height: 200px;
 }
@@ -100,3 +131,32 @@ footer {
     padding-left: 20px;
 }
 
+.btn {
+    padding: 20px;
+    width: 200px;
+    border: none;
+    text-decoration: none;
+    font-size: 16px;
+    margin: auto;
+}
+
+.primary {
+    background-color: #2C2C54;
+    color: #F49D6E;
+
+}
+.primary:hover{
+    background-color: #F49D6E;
+    color: #2C2C54;
+    box-shadow: 0 0 12px 4px slategrey;
+}
+
+.secondary {
+    background-color: #A40E4C;
+    color: #ACC3A6;
+}
+.secondary:hover{
+    background-color: #ACC3A6;
+    color: #A40E4C;
+    box-shadow: 0 0 12px 4px slategrey;
+}
