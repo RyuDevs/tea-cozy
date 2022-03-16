@@ -163,3 +163,40 @@ footer {
     color: #A40E4C;
     box-shadow: 0 0 12px 4px slategrey;
 }
+
+@media only screen and (max-width: 570px){
+    .navbar {
+        justify-content: center;
+    }
+    main {
+        top: 116px;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    /* .logo {
+        display: none;
+    } */
+    .navbar ul {
+        padding: 0;
+    }
+    .navbar {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .navbar{
+        display: inline;
+    }
+
+    main {
+        top: 123px;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .navbar{
+        font-size: 19px;
+    }
+}
